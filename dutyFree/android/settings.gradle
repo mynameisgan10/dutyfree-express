@@ -1,0 +1,3 @@
+rootProject.name = 'dutyFree'
+
+include ':app'
