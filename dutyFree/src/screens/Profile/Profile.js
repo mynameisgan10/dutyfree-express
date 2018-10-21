@@ -1,22 +1,25 @@
 import React from 'react'
-import styled from 'styled-components/native'
+import {Text,View, StyleSheet} from 'react-native'
 
-const StyledText = styled.Text`
-  color: palevioletred;
-  font-size: 50
-`
-const StyledView = styled.View`
-  background-color: white;
-  flex: 1;
-  justify-content: center;
-  align-items: center
-`
+
+const styles = StyleSheet.create({
+  container: {
+    backgroundColor: "white",
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center"
+  },
+  text: {
+    color: "palevioletred",
+    fontSize: 50
+  }
+})
 
 const Profile = () => {
     return (
-        <StyledView>
-          <StyledText>Profile</StyledText>
-        </StyledView>
+        <View style={styles.container}>
+          <Text style={styles.text}>Profile</Text>
+        </View>
       );
 }
 
